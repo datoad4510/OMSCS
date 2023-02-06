@@ -1,0 +1,77 @@
+1. keep all cards played before. when choosing a wildcard color, either put what others don't have or what you have a lot of
+2. when choosing to play, look at the top card and past cards (the ones that are out of the game). prioritize special cards
+3. don't play a +4 wildcard if the player next to you has below a certain number
+
+We know that there are 25 of each color and 8 of each number (except 0). We could use this to create a bayesian model
+and make it optimal in an information theoretic context. This is not something that I will do for the homework assignment,
+but should be kept in mind anyway. As in, what is the probability that the next player will have a certain number or a color
+given the log of the game.
+
+# increasing order. whenever a card is played, this is reflected in the sets
+PlayedColorsOrderedMap = {}
+PlayedNumbersOrderedMap = {}
+
+ChooseColor():
+	# iterate in decreasing order
+	for color in PlayedColorsOrderedSet:
+		if color in Agent.cards.colors:
+			return color
+	
+	return null
+
+ChooseNumber():
+	# iterate in decreasing order
+	for number in PlayedNumbersOrderedSet:
+		if number in Agent.cards.numbers:
+			return number
+
+	return null
+
+# game loop
+while(GameInProgress and AgentTurn):
+	if Agent.cards.length == 1:
+		# shout uno
+		Uno()
+
+	WildPlus4 = Agent.cards.findWildPlus4()
+	if WildPlus4 and Agent.NextPlayer.cards.length < 4:
+		color = ChooseColor()
+		if color != null:
+			play(WildPlus4,color)
+			continue
+
+	Wild = Agent.cards.findWild()
+	if Wild:
+		color = ChooseColor()
+		if color != null:
+			play(Wild,color)
+			continue
+	
+	# if we have a special card of the same color as the top card, play it
+	# doesn't matter which one
+	SpecialCard = Agent.cards.findSpecial(Deck.top.color,Deck.top.SpecialType)
+	if SpecialCard != null:
+		play(SpecialCard)
+		continue
+	
+	# choose either a number or a color
+	CandidateColor = ChooseColor()
+	CandidateNumber = ChooseNumber()
+
+	if CandidateColor == null and CandidateNumber == null:
+		draw()
+		continue
+
+	TotalEachColor = 25
+	TotalEachNumber = CandidateNumber != 0 ? 8 : 4
+
+	if PlayedColorsOrderedMap[CandidateColor] / TotalEachColor >= PlayedNumbersOrderedMap[CandidateNumber] / TotalEachNumber :
+		play(CandidateColor)
+		continue
+	else:
+		play(CandidateNumber)
+		continue
+		
+
+	
+	

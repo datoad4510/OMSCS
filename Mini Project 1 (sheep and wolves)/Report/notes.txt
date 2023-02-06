@@ -1,0 +1,15 @@
+How does your agent work? How does it generate new states, and how does it test them?
+BFS + recording a tree. Generates all valid states and adds them to the queue only after testing them. Validity tests
+
+How well does your agent perform? Does it struggle on any particular cases?
+It's slower when the optimal solution is longer. But no, it doesn't struggle.
+
+
+How efficient is your agent? How does its performance change as the number of animals rises?
+O(n*m) rough upper bound.
+
+Does your agent do anything particularly clever to try to arrive at an answer more efficiently?
+Not really, but pre-tests the states.
+
+How does your agent compare to a human? Does your agent solve the problem the same way you would?
+Yes

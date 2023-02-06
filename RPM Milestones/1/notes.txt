@@ -1,0 +1,15 @@
+How do you feel you, as a human, reason through the problems on the Raven’s test?
+Choose three or four problems and describe your own approach.
+
+Mostly visually by intuition. As humans we don't think algorithmically on these problems in general, but we do use some techniques like
+heuristically counting objects in pictures, looking at similarities between them, mapping them to each other etc.
+
+How do you expect you will design an agent to approach these problems? 
+Will you try to generate a verbal representation of the images, like identifying shapes and their relative positions to one another? 
+Will you try to use some heuristic methods, like looking for patterns in the changing numbers of shapes, number of darkened pixels, etc.? 
+Will you have your agent select from multiple strategies based on what it sees in a particular problem? You do not need to answer all these questions specifically, but these are examples of the types of questions you may answer in previewing how you expect to design your agent.
+
+Not sure at the moment. I will probably use OpenCV to identify shapes in the images, use a similarity metric to find mappings between the objects,
+
+
+What do you anticipate your biggest challenges in designing your agent will be?
