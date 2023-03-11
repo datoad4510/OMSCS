@@ -1,0 +1,150 @@
+Basic Problem C-01
+a
+Basic Problem C-02
+c
+Basic Problem C-03
+c
+Basic Problem C-04
+c
+Basic Problem C-05
+c
+Basic Problem C-06
+c
+Basic Problem C-07
+c
+Basic Problem C-08
+C:\Users\Dato\Desktop\OMSCS\RPM-Project-Code\Agent.py:213: RuntimeWarning: divide by zero encountered in double_scalars
+  r1_h = b2/b1
+C:\Users\Dato\Desktop\OMSCS\RPM-Project-Code\Agent.py:222: RuntimeWarning: divide by zero encountered in double_scalars
+  r1_v = b4/b1
+C:\Users\Dato\Desktop\OMSCS\RPM-Project-Code\Agent.py:254: RuntimeWarning: invalid value encountered in double_scalars
+  return abs(average_vertical_ratio - x[0]) - abs(average_vertical_ratio - y[0])
+c
+Basic Problem C-09
+c
+Basic Problem C-10
+c
+Basic Problem C-11
+a
+Basic Problem C-12
+c
+Basic Problem D-01
+a
+Basic Problem D-02
+b
+Basic Problem D-03
+b
+Basic Problem D-04
+c
+Basic Problem D-05
+c
+Basic Problem D-06
+c
+Basic Problem D-07
+c
+Basic Problem D-08
+c
+Basic Problem D-09
+c
+Basic Problem D-10
+c
+Basic Problem D-11
+c
+Basic Problem D-12
+c
+Basic Problem E-01
+a
+Basic Problem E-02
+c
+Basic Problem E-03
+a
+Basic Problem E-04
+c
+Basic Problem E-05
+a
+Basic Problem E-06
+c
+Basic Problem E-07
+c
+Basic Problem E-08
+c
+Basic Problem E-09
+a
+Basic Problem E-10
+a
+Basic Problem E-11
+a
+Basic Problem E-12
+b
+Challenge Problem C-01
+c
+Challenge Problem C-02
+c
+Challenge Problem C-03
+c
+Challenge Problem C-04
+c
+Challenge Problem C-05
+c
+Challenge Problem C-06
+c
+Challenge Problem C-07
+c
+Challenge Problem C-08
+c
+Challenge Problem C-09
+c
+Challenge Problem C-10
+c
+Challenge Problem C-11
+c
+Challenge Problem C-12
+c
+Challenge Problem D-01
+c
+Challenge Problem D-02
+c
+Challenge Problem D-03
+c
+Challenge Problem D-04
+c
+Challenge Problem D-05
+c
+Challenge Problem D-06
+c
+Challenge Problem D-07
+c
+Challenge Problem D-08
+c
+Challenge Problem D-09
+c
+Challenge Problem D-10
+c
+Challenge Problem D-11
+c
+Challenge Problem D-12
+c
+Challenge Problem E-01
+a
+Challenge Problem E-02
+c
+Challenge Problem E-03
+a
+Challenge Problem E-04
+a
+Challenge Problem E-05
+c
+Challenge Problem E-06
+c
+Challenge Problem E-07
+c
+Challenge Problem E-08
+c
+Challenge Problem E-09
+c
+Challenge Problem E-10
+c
+Challenge Problem E-11
+c
+Challenge Problem E-12
+c
